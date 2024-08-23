@@ -6,11 +6,11 @@
 /*   By: vpelc <vpelc@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 14:25:52 by vpelc             #+#    #+#             */
-/*   Updated: 2024/08/22 14:21:02 by vpelc            ###   ########.fr       */
+/*   Updated: 2024/08/23 14:17:44 by vpelc            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf/ft_printf.h"
+#include "printf/ft_printf.h"
 #include <signal.h>
 #include <stdlib.h>
 
@@ -82,7 +82,7 @@ int	main(void)
 	sig.sa_sigaction = &handle_signal;
 	sig.sa_flags = SA_SIGINFO;
 	sigemptyset(&sig.sa_mask);
-	ft_printf("%d\n", getpid());
+	ft_printf("Server's pid :%d\n", getpid());
 	sigaction(SIGUSR1, &sig, NULL);
 	sigaction(SIGUSR2, &sig, NULL);
 	while (1)

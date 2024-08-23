@@ -6,11 +6,11 @@
 /*   By: vpelc <vpelc@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 16:15:07 by vpelc             #+#    #+#             */
-/*   Updated: 2024/08/22 17:12:54 by vpelc            ###   ########.fr       */
+/*   Updated: 2024/08/23 14:17:56 by vpelc            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf/ft_printf.h"
+#include "printf/ft_printf.h"
 #include <signal.h>
 #include <stdlib.h>
 
